@@ -1,4 +1,4 @@
-package com.example.codingchallengeapi.ui
+package com.example.codingchallengeapi.ui.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -11,6 +11,7 @@ import androidx.navigation.fragment.navArgs
 import com.example.codingchallengeapi.R
 import com.example.codingchallengeapi.databinding.FragmentLaunchDetailsBinding
 import com.example.codingchallengeapi.databinding.ItemGalleryBinding
+import com.example.codingchallengeapi.ui.viewmodels.LaunchDetailsViewModel
 import com.example.codingchallengeapi.utils.ImageViewUtils.loadFromURL
 import dagger.hilt.android.AndroidEntryPoint
 

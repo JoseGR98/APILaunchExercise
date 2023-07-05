@@ -8,7 +8,7 @@
 
         <variable
             name="launchDetailsViewModel"
-            type="com.example.codingchallengeapi.ui.LaunchDetailsViewModel" />
+            type="com.example.codingchallengeapi.ui.viewmodels.LaunchDetailsViewModel" />
 
         <variable
             name="context"
@@ -25,7 +25,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:padding="16dp"
-            tools:context=".ui.LaunchDetailsFragment">
+            tools:context=".ui.fragments.LaunchDetailsFragment">
 
             <TextView
                 android:id="@+id/titleTextView"

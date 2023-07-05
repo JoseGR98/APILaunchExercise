@@ -1,7 +1,7 @@
 package com.example.codingchallengeapi.utils
 
 import androidx.recyclerview.widget.DiffUtil
-import com.example.codingchallengeapi.domain.Launch
+import com.example.codingchallengeapi.domain.model.Launch
 
 class LaunchDiffUtil(private val oldList: List<Launch>, private val newList: List<Launch>) :
     DiffUtil.Callback() {

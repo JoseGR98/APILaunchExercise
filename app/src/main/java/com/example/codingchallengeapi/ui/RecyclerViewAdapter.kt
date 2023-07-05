@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.codingchallengeapi.R
-import com.example.codingchallengeapi.domain.Launch
+import com.example.codingchallengeapi.domain.model.Launch
 import com.example.codingchallengeapi.utils.ImageViewUtils.loadFromURL
 import com.example.codingchallengeapi.utils.LaunchDiffUtil
 
@@ -57,7 +57,5 @@ class RecyclerViewAdapter(private val clickListener: (Launch) -> Unit) :
         //notifyDataSetChanged()
         diffResult.dispatchUpdatesTo(this)
     }
-
-
 
 }

@@ -1,6 +1,7 @@
-package com.example.codingchallengeapi.data.general
+package com.example.codingchallengeapi.data.core
 
-import com.example.codingchallengeapi.data.details.LaunchDetailsDTO
+import com.example.codingchallengeapi.data.remote.LaunchDetailsDTO
+import com.example.codingchallengeapi.data.remote.LaunchDTO
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Path

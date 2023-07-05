@@ -1,6 +1,5 @@
-package com.example.codingchallengeapi.data.general
+package com.example.codingchallengeapi.data.remote
 
-import com.example.codingchallengeapi.data.Links
 import com.google.gson.annotations.SerializedName
 
 data class LaunchDTO(

@@ -6,7 +6,7 @@
     app:startDestination="@id/launchFragment">
     <fragment
         android:id="@+id/launchFragment"
-        android:name="com.example.codingchallengeapi.ui.LaunchFragment"
+        android:name="com.example.codingchallengeapi.ui.fragments.LaunchFragment"
         android:label="LaunchFragment"
         tools:layout="@layout/fragment_launch" >
         <action
@@ -18,7 +18,7 @@
     </fragment>
     <fragment
         android:id="@+id/launchDetailsFragment"
-        android:name="com.example.codingchallengeapi.ui.LaunchDetailsFragment"
+        android:name="com.example.codingchallengeapi.ui.fragments.LaunchDetailsFragment"
         android:label="LaunchDetailsFragment"
         tools:layout="@layout/fragment_launch_details" >
         <argument

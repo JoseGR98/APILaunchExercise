@@ -1,9 +1,9 @@
 package com.example.codingchallengeapi.data
 
 import android.util.Log
-import com.example.codingchallengeapi.data.general.ILaunchAPI
+import com.example.codingchallengeapi.data.core.ILaunchAPI
 import com.example.codingchallengeapi.domain.ILaunchDetailsGeneralRepository
-import com.example.codingchallengeapi.domain.LaunchDetails
+import com.example.codingchallengeapi.domain.model.LaunchDetails
 import com.example.codingchallengeapi.utils.ResultAPI
 import javax.inject.Inject
 
@@ -31,7 +31,7 @@ class LaunchDetailsGeneralRepositoryImpl @Inject constructor(private val retrofi
         }.onSuccess {
             ResultAPI.Success(it)
         }.onFailure {
-            ResultAPI.Error<LaunchDetails>(it.message ?: "Error generic")
+            ResultAPI.Error(it.message ?: "Error generic")
         }
     }
 }

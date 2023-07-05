@@ -1,4 +1,4 @@
-package com.example.codingchallengeapi.ui
+package com.example.codingchallengeapi.ui.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,6 +8,8 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.example.codingchallengeapi.databinding.FragmentLaunchBinding
+import com.example.codingchallengeapi.ui.viewmodels.LaunchViewModel
+import com.example.codingchallengeapi.ui.RecyclerViewAdapter
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

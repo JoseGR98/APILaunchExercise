@@ -1,8 +1,8 @@
 package com.example.codingchallengeapi.data
 
 import android.util.Log
-import com.example.codingchallengeapi.data.general.ILaunchAPI
-import com.example.codingchallengeapi.domain.Launch
+import com.example.codingchallengeapi.data.core.ILaunchAPI
+import com.example.codingchallengeapi.domain.model.Launch
 import com.example.codingchallengeapi.domain.ILaunchGeneralRepository
 import com.example.codingchallengeapi.utils.ResultAPI
 import javax.inject.Inject

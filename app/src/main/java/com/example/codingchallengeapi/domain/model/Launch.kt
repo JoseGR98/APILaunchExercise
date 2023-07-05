@@ -1,4 +1,4 @@
-package com.example.codingchallengeapi.domain
+package com.example.codingchallengeapi.domain.model
 
 data class Launch(
     val id: String,

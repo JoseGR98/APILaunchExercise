@@ -1,6 +1,6 @@
 package com.example.codingchallengeapi.di
 
-import com.example.codingchallengeapi.data.general.ILaunchAPI
+import com.example.codingchallengeapi.data.core.ILaunchAPI
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

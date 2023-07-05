@@ -1,4 +1,4 @@
-package com.example.codingchallengeapi.ui
+package com.example.codingchallengeapi.ui.viewmodels
 
 import android.util.Log
 import androidx.lifecycle.LiveData
@@ -6,7 +6,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.codingchallengeapi.domain.ILaunchGeneralRepository
-import com.example.codingchallengeapi.domain.Launch
+import com.example.codingchallengeapi.domain.model.Launch
 import com.example.codingchallengeapi.utils.ResultAPI
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers

@@ -1,4 +1,4 @@
-package com.example.codingchallengeapi.data
+package com.example.codingchallengeapi.data.remote
 
 import com.google.gson.annotations.SerializedName
 

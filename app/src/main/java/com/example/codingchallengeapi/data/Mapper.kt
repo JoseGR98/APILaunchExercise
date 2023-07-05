@@ -1,9 +1,9 @@
 package com.example.codingchallengeapi.data
 
-import com.example.codingchallengeapi.data.details.LaunchDetailsDTO
-import com.example.codingchallengeapi.data.general.LaunchDTO
-import com.example.codingchallengeapi.domain.Launch
-import com.example.codingchallengeapi.domain.LaunchDetails
+import com.example.codingchallengeapi.data.remote.LaunchDetailsDTO
+import com.example.codingchallengeapi.data.remote.LaunchDTO
+import com.example.codingchallengeapi.domain.model.Launch
+import com.example.codingchallengeapi.domain.model.LaunchDetails
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
