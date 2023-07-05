@@ -3,7 +3,7 @@ package com.example.codingchallengeapi.utils
 import androidx.recyclerview.widget.DiffUtil
 import com.example.codingchallengeapi.domain.model.Launch
 
-class LaunchDiffUtil(private val oldList: List<Launch>, private val newList: List<Launch>) :
+class RecyclerListDiffUtil(private val oldList: List<Launch>, private val newList: List<Launch>) :
     DiffUtil.Callback() {
     override fun getOldListSize(): Int {
         return oldList.size

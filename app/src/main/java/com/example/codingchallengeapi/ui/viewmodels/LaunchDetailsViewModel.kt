@@ -1,5 +1,6 @@
 package com.example.codingchallengeapi.ui.viewmodels
 
+import android.graphics.drawable.Drawable
 import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -42,4 +43,13 @@ class LaunchDetailsViewModel @Inject constructor(private val apiRepository: ILau
             }
         }
     }
+
+    fun descriptionIsNullOrEmpty(description: String): Boolean {
+        return description.isEmpty()
+    }
+
+    fun imageIsNullOrEmpty(image: Drawable?): Boolean {
+        return image != null
+    }
+
 }

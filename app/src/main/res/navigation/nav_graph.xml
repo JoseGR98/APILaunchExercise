@@ -8,7 +8,7 @@
         android:id="@+id/launchFragment"
         android:name="com.example.codingchallengeapi.ui.fragments.LaunchFragment"
         android:label="LaunchFragment"
-        tools:layout="@layout/fragment_launch" >
+        tools:layout="@layout/fragment_launch">
         <action
             android:id="@+id/action_launchFragment_to_launchDetailsFragment"
             app:destination="@id/launchDetailsFragment" />
@@ -20,7 +20,7 @@
         android:id="@+id/launchDetailsFragment"
         android:name="com.example.codingchallengeapi.ui.fragments.LaunchDetailsFragment"
         android:label="LaunchDetailsFragment"
-        tools:layout="@layout/fragment_launch_details" >
+        tools:layout="@layout/fragment_launch_details">
         <argument
             android:name="idOfLaunch"
             app:argType="string" />

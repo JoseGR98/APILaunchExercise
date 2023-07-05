@@ -8,7 +8,7 @@ data class LaunchDetailsDTO(
     @SerializedName("name")
     val name: String? = "",
     @SerializedName("links")
-    val links: Links?,
+    val links: LinksDTO?,
     @SerializedName("date_utc")
     val date_utc: String? = "",
     @SerializedName("details")

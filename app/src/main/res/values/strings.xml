@@ -9,5 +9,7 @@
     <string name="logo_image">Logo image</string>
     <string name="image_gallery">Image from gallery</string>
     <string name="title_gallery">Gallery</string>
+    <string name="gallery_empty">Gallery not available</string>
+    <string name="description_empty">Description not available</string>
 
 </resources>

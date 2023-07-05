@@ -2,9 +2,10 @@ package com.example.codingchallengeapi.data.remote
 
 import com.google.gson.annotations.SerializedName
 
-data class Links(
+data class LinksDTO(
     @SerializedName("patch")
-    val patch: Patch?,
+    val patch: PatchDTO?,
+
     @SerializedName("flickr")
-    val flickr: Flickr?
+    val flickr: FlickrDTO?
 )

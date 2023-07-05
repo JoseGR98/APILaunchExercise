@@ -12,7 +12,7 @@ import com.example.codingchallengeapi.R
 import com.example.codingchallengeapi.databinding.FragmentLaunchDetailsBinding
 import com.example.codingchallengeapi.databinding.ItemGalleryBinding
 import com.example.codingchallengeapi.ui.viewmodels.LaunchDetailsViewModel
-import com.example.codingchallengeapi.utils.ImageViewUtils.loadFromURL
+import com.example.codingchallengeapi.utils.LoadURLImage.loadFromURL
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -51,6 +51,14 @@ class LaunchDetailsFragment : Fragment() {
                 bindingGalleryItem.itemImageView.loadFromURL(imageURL)
                 binding.galleryContainer.addView(bindingGalleryItem.root)
             }
+
+            if (viewModel.imageIsNullOrEmpty(binding.mainImageView.drawable)) {
+                binding.textViewGallery.text = getString(R.string.gallery_empty)
+            }
+            if (viewModel.descriptionIsNullOrEmpty(binding.descriptionTextView.text as String)) {
+                binding.textViewGallery.text = getString(R.string.description_empty)
+            }
+
         }
     }
 }

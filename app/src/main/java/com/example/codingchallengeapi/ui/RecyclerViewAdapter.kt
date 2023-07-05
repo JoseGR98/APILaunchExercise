@@ -9,8 +9,8 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.codingchallengeapi.R
 import com.example.codingchallengeapi.domain.model.Launch
-import com.example.codingchallengeapi.utils.ImageViewUtils.loadFromURL
-import com.example.codingchallengeapi.utils.LaunchDiffUtil
+import com.example.codingchallengeapi.utils.LoadURLImage.loadFromURL
+import com.example.codingchallengeapi.utils.RecyclerListDiffUtil
 
 class RecyclerViewAdapter(private val clickListener: (Launch) -> Unit) :
     RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>() {
@@ -51,7 +51,7 @@ class RecyclerViewAdapter(private val clickListener: (Launch) -> Unit) :
     }
 
     fun submitList(list: List<Launch>) {
-        val diffResult = DiffUtil.calculateDiff(LaunchDiffUtil(itemList, list))
+        val diffResult = DiffUtil.calculateDiff(RecyclerListDiffUtil(itemList, list))
         itemList.clear()
         itemList.addAll(list)
         //notifyDataSetChanged()
