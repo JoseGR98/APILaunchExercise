@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.codingchallengeapi.domain.ILaunchGeneralRepository
 import com.example.codingchallengeapi.domain.model.Launch
-import com.example.codingchallengeapi.utils.ResultAPI
+import com.example.codingchallengeapi.domain.model.ResultAPI
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -29,7 +29,7 @@ class LaunchViewModel @Inject constructor(private val apiRepository: ILaunchGene
 
     private fun getList() {
         viewModelScope.launch(Dispatchers.IO) {
-            when (val result = apiRepository.getResult()) {
+            when (val result = apiRepository.getResults()) {
                 is ResultAPI.Error -> {
                     withContext(Dispatchers.Main) {
                         Log.d("ERROR", "Error API Elements")

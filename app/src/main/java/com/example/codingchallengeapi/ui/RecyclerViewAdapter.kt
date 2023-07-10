@@ -9,12 +9,12 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.codingchallengeapi.R
 import com.example.codingchallengeapi.domain.model.Launch
-import com.example.codingchallengeapi.utils.LoadURLImage.loadFromURL
-import com.example.codingchallengeapi.utils.RecyclerListDiffUtil
+import com.example.codingchallengeapi.ui.utils.LoadURLImage.loadFromURL
+import com.example.codingchallengeapi.ui.utils.RecyclerListDiffUtil
 
 class RecyclerViewAdapter(private val clickListener: (Launch) -> Unit) :
     RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>() {
-
+    // TODO Change to data binding
     private val itemList: MutableList<Launch> = mutableListOf()
 
     class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {

@@ -12,6 +12,7 @@ data class LaunchDTO(
     @SerializedName("date_utc")
     val date_utc: String? = ""
 ) {
+
     val urlLogo : String
         get() = links?.patch?.small ?: ""
 }

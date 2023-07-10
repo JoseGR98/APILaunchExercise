@@ -12,7 +12,7 @@ import com.example.codingchallengeapi.R
 import com.example.codingchallengeapi.databinding.FragmentLaunchDetailsBinding
 import com.example.codingchallengeapi.databinding.ItemGalleryBinding
 import com.example.codingchallengeapi.ui.viewmodels.LaunchDetailsViewModel
-import com.example.codingchallengeapi.utils.LoadURLImage.loadFromURL
+import com.example.codingchallengeapi.ui.utils.LoadURLImage.loadFromURL
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

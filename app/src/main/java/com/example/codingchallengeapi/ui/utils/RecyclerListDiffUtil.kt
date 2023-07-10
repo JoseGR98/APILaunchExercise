@@ -1,4 +1,4 @@
-package com.example.codingchallengeapi.utils
+package com.example.codingchallengeapi.ui.utils
 
 import androidx.recyclerview.widget.DiffUtil
 import com.example.codingchallengeapi.domain.model.Launch

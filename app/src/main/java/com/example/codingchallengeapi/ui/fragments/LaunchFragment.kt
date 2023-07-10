@@ -31,13 +31,13 @@ class LaunchFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val recyclerView = binding.recyclerView
-        val recyclerViewAdapter = RecyclerViewAdapter(
-            clickListener = { selectedItem ->
-                val action = LaunchFragmentDirections.actionLaunchFragmentToLaunchDetailsFragment(
-                    selectedItem.id
-                )
-                findNavController().navigate(action)
-            })
+        val recyclerViewAdapter = RecyclerViewAdapter()
+        { selectedItem ->
+            val action = LaunchFragmentDirections.actionLaunchFragmentToLaunchDetailsFragment(
+                selectedItem.id
+            )
+            findNavController().navigate(action)
+        }
         recyclerView.adapter = recyclerViewAdapter
 
         viewModel.launchList.observe(viewLifecycleOwner) {

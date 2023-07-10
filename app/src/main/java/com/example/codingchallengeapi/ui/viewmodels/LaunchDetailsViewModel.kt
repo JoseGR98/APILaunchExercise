@@ -8,7 +8,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.codingchallengeapi.domain.ILaunchDetailsGeneralRepository
 import com.example.codingchallengeapi.domain.model.LaunchDetails
-import com.example.codingchallengeapi.utils.ResultAPI
+import com.example.codingchallengeapi.domain.model.ResultAPI
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

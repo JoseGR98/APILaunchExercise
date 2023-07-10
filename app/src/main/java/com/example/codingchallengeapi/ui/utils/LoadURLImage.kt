@@ -1,4 +1,4 @@
-package com.example.codingchallengeapi.utils
+package com.example.codingchallengeapi.ui.utils
 
 import android.widget.ImageView
 import com.example.codingchallengeapi.R
@@ -13,3 +13,5 @@ object LoadURLImage {
         }
     }
 }
+
+// TODO - Let approach
