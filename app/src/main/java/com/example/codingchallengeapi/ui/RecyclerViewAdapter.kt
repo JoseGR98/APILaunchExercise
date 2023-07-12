@@ -1,27 +1,20 @@
 package com.example.codingchallengeapi.ui
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.example.codingchallengeapi.R
+import com.example.codingchallengeapi.databinding.CardViewBinding
 import com.example.codingchallengeapi.domain.model.Launch
 import com.example.codingchallengeapi.ui.utils.LoadURLImage.loadFromURL
 import com.example.codingchallengeapi.ui.utils.RecyclerListDiffUtil
 
 class RecyclerViewAdapter(private val clickListener: (Launch) -> Unit) :
     RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>() {
-    // TODO Change to data binding
+    private lateinit var binding: CardViewBinding
     private val itemList: MutableList<Launch> = mutableListOf()
 
-    class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
-        val imageView: ImageView = itemView.findViewById(R.id.imageView)
-        val titleTextView: TextView = itemView.findViewById(R.id.titleTextView)
-        val timeTextView: TextView = itemView.findViewById(R.id.timeTextView)
-
+    class ViewHolder(binding: CardViewBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(launch: Launch, clickListener: (Launch) -> Unit) {
             itemView.setOnClickListener {
                 clickListener(launch)
@@ -30,19 +23,16 @@ class RecyclerViewAdapter(private val clickListener: (Launch) -> Unit) :
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater
-            .from(parent.context)
-            .inflate(R.layout.card_view_design, parent, false)
+        binding = CardViewBinding.inflate(LayoutInflater.from(parent.context), parent, false)
 
-        return ViewHolder(view)
+        return ViewHolder(binding)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val currentItem = itemList[position]
-
-        holder.imageView.loadFromURL(currentItem.logo)
-        holder.titleTextView.text = currentItem.title
-        holder.timeTextView.text = currentItem.time
+        binding.imageView.loadFromURL(currentItem.logo)
+        binding.titleTextView.text = currentItem.title
+        binding.timeTextView.text = currentItem.time
         holder.bind(currentItem, clickListener)
     }
 

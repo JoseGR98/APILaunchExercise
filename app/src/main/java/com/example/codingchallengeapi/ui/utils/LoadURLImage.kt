@@ -6,12 +6,8 @@ import com.squareup.picasso.Picasso
 
 object LoadURLImage {
     fun ImageView.loadFromURL(imageURL: String) {
-        if (imageURL.isNotBlank() && imageURL != "") {
-            Picasso.get().load(imageURL).into(this)
-        } else {
-            this.setImageResource(R.drawable.no_image)
-        }
+        imageURL.takeIf { it.isNotBlank() && it != "" }?.let { nonEmptyURL ->
+            Picasso.get().load(nonEmptyURL).into(this)
+        } ?: this.setImageResource(R.drawable.no_image)
     }
 }
-
-// TODO - Let approach
